@@ -1,14 +1,12 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
+  <ion-navbar class="hd">
+    <ion-title class="hd">
+      Exames
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="bg">
+  <img src="assets/imgs/sangue.png" (click)="goTo('hemograma')">
+  <img src="assets/imgs/urina.png" (click)="goTo('urina')">
 </ion-content>

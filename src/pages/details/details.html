@@ -1,0 +1,38 @@
+<!--
+  Generated template for the DetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Detalhes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card *ngIf='exams'>
+      <ion-card-header class="header">
+        <h2> <b>{{exams.nome}}</b></h2>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p>
+          <b>FAIXA</b>
+        </p>
+        {{exams.faixa}}
+      </ion-card-content>
+
+      <ion-card-content>
+        <p> 
+          <b>DESCRIÇÃO</b>
+        </p>
+        {{exams.descricao}}
+      </ion-card-content>
+  </ion-card>
+
+</ion-content>
